@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>tytuł</title>
+    </head>
+    <body>
+        <form>
+            <label for="imie">Imie:</label><br>
+            <input type="text" id="imie" rows="1"><br>
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" id="nazwisko" rows="1"><br>
+            <button type="button" onclick="wynik()"></button>
+            <p id="wynik"></p>
+        </form>
+        <script>
+            function wynik() {
+                var a = document.getElementById("imie").value;
+                var b = document.getElementById("nazwisko").value;
+                document.getElementById("wynik").innerHTML = a + b;
+            }
+        </script>
+    </body>
+</html>
